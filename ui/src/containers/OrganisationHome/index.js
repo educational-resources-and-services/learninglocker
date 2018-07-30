@@ -31,6 +31,12 @@ const renderPage = (routeName) => {
     }));
   }
 
+  if (testRoute('organisation.data.aggregate')) {
+    return React.createElement(createAsyncComponent({
+      loader: System.import('ui/containers/Aggregate')
+    }));
+  }
+
   if (testRoute('organisation.data.statementForwarding')) {
     return React.createElement(createAsyncComponent({
       loader: System.import('ui/components/StatementForwarding')

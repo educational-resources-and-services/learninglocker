@@ -152,6 +152,7 @@ class SideNav extends Component {
             {this.renderLink(activeClass, 'organisation.data.dashboards', 'Dashboards')}
             {this.renderLink(activeClass, 'organisation.data.visualise', 'Visualise')}
             {this.renderLink(activeClass, 'organisation.data.source', 'Source')}
+            {this.renderLink(activeClass, 'organisation.data.aggregate', 'Aggregate')}
             {this.renderLink(activeClass, 'organisation.data.statementForwarding', 'Statement Forwarding')}
           </CollapsibleNav>
 
