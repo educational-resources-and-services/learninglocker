@@ -22,5 +22,8 @@ export {
   updateStatementQuery
 } from 'ui/redux/modules/statements';
 export {
+  updateStatementAggregate
+} from 'ui/redux/modules/aggregate';
+export {
   downloadExport
 } from 'ui/redux/modules/exports';

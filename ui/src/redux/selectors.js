@@ -21,6 +21,9 @@ export {
   statementQuerySelector
 } from 'ui/redux/modules/statements';
 export {
+  statementAggregateSelector
+} from 'ui/redux/modules/aggregate';
+export {
   isAuthenticatedSelector,
   isLoggingOutSelector,
   isAuthenticatedWithOrgSelector,

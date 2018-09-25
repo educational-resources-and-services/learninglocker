@@ -7,6 +7,7 @@ import pagination from 'ui/redux/modules/pagination';
 import models from 'ui/redux/modules/models';
 import aggregation from 'ui/redux/modules/aggregation';
 import statements from 'ui/redux/modules/statements';
+import aggregate from 'ui/redux/modules/aggregate';
 import search from 'ui/redux/modules/search';
 import uploadpeople from 'ui/redux/modules/people';
 import uploadPersona from 'ui/redux/modules/persona';
@@ -28,6 +29,7 @@ export default combineReducers({
   exports: recycleState(exportsReducer, [LOGOUT, ORG_LOGOUT]),
   logo: recycleState(logo, [LOGOUT, ORG_LOGOUT]),
   statements: recycleState(statements, [LOGOUT, ORG_LOGOUT]),
+  aggregate: recycleState(aggregate, [LOGOUT, ORG_LOGOUT]),
   search: recycleState(search, [LOGOUT, ORG_LOGOUT]),
   toasts: recycleState(toasts, [LOGOUT, ORG_LOGOUT]),
   clientIds: recycleState(clientIds, [LOGOUT, ORG_LOGOUT]),
