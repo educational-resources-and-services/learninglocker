@@ -1,0 +1,20 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/node-website
+hooks:
+  AfterInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: root
+    - location: scripts/codestar_remote_access
+      timeout: 300
+      runas: root
+    - location: npm start
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: npm run stop
+      timeout: 300
+      runas: root
