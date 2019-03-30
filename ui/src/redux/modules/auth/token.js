@@ -112,7 +112,8 @@ function storeTokenSaga({ token, tokenType, tokenId }) {
   try {
     if (token) {
       const cookieName = getCookieName({ tokenType, tokenId });
-      Cookies.set(cookieName, token);
+      // Cookies.set(cookieName, token);
+      Cookies.set(cookieName, token, { domain: location.hostname.replace(/^[^.]+/, '') });  // ERAS addition
     }
   } catch (err) {
     console.error(err);
